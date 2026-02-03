@@ -1,7 +1,8 @@
 // Write a function that returns the largest number in an array
 
 function findLargest(arr) {
-  let x = arr[0];
+  let x = arr[0]; // dont keep x=-1, what if the arr contains all negative numbers
+  // let x= -Infinity;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > x) {
       x = arr[i];
